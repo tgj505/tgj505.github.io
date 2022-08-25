@@ -1,0 +1,175 @@
+:root {
+  --site-background-dark: darkgreen;
+  --site-background-light: lavenderblush;
+  --tile-background: NavajoWhite;
+  --site-font: rgb(45, 49, 40);
+}
+
+#welcome-section {
+	display: block;
+	max-width: 100%;
+	height: 100vh;
+	background-color: site-background-light;
+	background-image: url("https://tomgjohnson.files.wordpress.com/2017/04/img_20141217_155007080.jpg");
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 25px;
+	color: var(--site-background-light);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 25%;
+    width: 50%;
+    
+	background-color: var(--site-background-light);
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	
+	text-align: center;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+.nav-link{
+	width: 10%;
+	font-style: sans-serif;
+	border-color: grey;
+	border-width: 1px;
+	border-style: dotted;
+	
+}
+
+.nav-link:hover{
+	border-color: (--site-background-dark);
+	border-width: 1px;
+	border-style: solid;
+}
+
+
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	
+}
+
+p{
+	font-family: sans-serif;
+}
+
+#welcome-p{
+	text-align: center;
+	
+}
+
+#projects{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 50%;
+	background-color: var(--site-background-light);
+}
+
+@media (max-width: 100px){
+	.project-tile{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 49%;
+		
+		
+		font-family: sans-serif;
+		text-align: left;
+		
+		background-color: var(--tile-background);
+		
+		border-color: green;
+		border-width: 3px;
+		border-style: solid;
+		border-radius: 10px;
+		
+		padding: 5px;
+		margin: 5px;
+}
+}
+.project-tile{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 31%;
+	
+	
+	font-family: sans-serif;
+	text-align: left;
+	
+	background-color: var(--tile-background);
+	
+	border-color: green;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 10px;
+	
+	padding: 5px;
+	margin: 5px;
+}
+
+#profile-link-tile{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 31%;
+	
+	
+	font-family: sans-serif;
+	text-align: left;
+	
+	border-color: green;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 10px;
+	
+	padding: 5px;
+	margin: 5px;
+}
+
+
+figcaption{
+	text-align:center;
+	font-size: 13px;
+	font-style: italic;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	padding: 5px;
+	margin: 5px;
+}
+
+img:hover {
+	max-width: 99%;
+	height: auto;
+	border-color: blue;
+	border-width: 1%;
+	border-style: solid;
+}
+
+#bio{
+		
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 2px;
+}
