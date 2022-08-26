@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 :root {
   --site-background-dark: darkgreen;
   --site-background-light: lavenderblush;
@@ -5,17 +7,44 @@
   --site-font: rgb(45, 49, 40);
 }
 
+*{
+	font-family: Dosis, sans-serif;
+	background-color: lavenderblush;
+}
+
+@media (max-width: 200px){
+	.project-tile{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 49%;
+		
+		text-align: left;
+		
+		background-color: var(--tile-background);
+		
+		border-color: green;
+		border-width: 3px;
+		border-style: solid;
+		border-radius: 10px;
+		
+		padding: 5px;
+		margin: 5px;
+	}
+}
+
 #welcome-section {
 	display: block;
 	max-width: 100%;
-	height: 50vh;
-	background-color: var(--site-background-light);
+	/*height: 50vh;*/
+	
 	background-image: url("https://tomgjohnson.files.wordpress.com/2017/04/img_20141217_155007080.jpg");
-	background-size: 40%;
+	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	text-align: center;
 	padding-top: 35px;
+	font-family: Teko;
 	
 }
 
@@ -49,6 +78,7 @@
 	border-width: 1px;
 	border-style: dotted;
 	vertical-align: middle;
+	background-color: var(--tile-background);
 	
 }
 
@@ -62,23 +92,26 @@
 h1{
 	text-align: center;
 	padding: 0px;
-	font-family: sans-serif;
 	font-size: 32;
 	color: var(--site-background-light);
 	text-shadow: 0px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	
+	background-color:rgb(0,0,0,.1);
 }
 
 p{
 	font-family: sans-serif;
+	background-color: var(--tile-background);
+}
+
+a{
+	background: transparent;
 }
 
 #welcome-p{
 	text-align: center;
 	background-color: var(--site-background-light);
-	padding: 5px;
+	padding: 15px;
 	color: black;
-	
 }
 
 #projects{
@@ -87,36 +120,17 @@ p{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-color: var(--site-background-light);
+	
+	
 }
 
-@media (max-width: 100px){
-	.project-tile{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 49%;
-		
-		
-		font-family: sans-serif;
-		text-align: left;
-		
-		background-color: var(--tile-background);
-		
-		border-color: green;
-		border-width: 3px;
-		border-style: solid;
-		border-radius: 10px;
-		
-		padding: 5px;
-		margin: 5px;
-}
-}
+
+
 .project-tile{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 31%;
+	width: 29%;
 	
 	
 	font-family: sans-serif;
@@ -124,55 +138,42 @@ p{
 	
 	background-color: var(--tile-background);
 	
-	border-color: green;
+	border-color: black;
 	border-width: 3px;
 	border-style: solid;
 	border-radius: 10px;
 	
-	padding: 5px;
-	margin: 5px;
+	padding: 10px;
+	margin: 10px;
 }
 
-#profile-link-tile{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 31%;
-	
-	
-	font-family: sans-serif;
-	text-align: left;
-	
-	border-color: green;
-	border-width: 3px;
-	border-style: solid;
-	border-radius: 10px;
-	
-	padding: 5px;
-	margin: 5px;
+figure{
+	background-color: var(--tile-background);
 }
-
 
 figcaption{
 	text-align:center;
 	font-size: 13px;
 	font-style: italic;
+	background-color: var(--tile-background);
 }
 
 img {
 	max-width: 100%;
-	height: auto;
-	padding: 5px;
-	margin: 5px;
+	max-height: 100%;	
+	background-color: var(--tile-background);
 }
 
 img:hover {
-	max-width: 99%;
+	max-width: calc(100%-200px);
 	height: auto;
 	border-color: blue;
-	border-width: 1px;
-	border-style: solid;
+	border-width: 2px;
+	border-style: dotted;
+	border-radius: 2px;
+	background-color: var(--tile-background);
 }
+
 #bio {
     display: block;
 	margin-left: auto;
@@ -180,11 +181,12 @@ img:hover {
     	
 	padding: 10px;
 	background-color: var(--site-background-light);
-	/*border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 5px;
-	*/
-	
-	
+	border-color: black;
+	border-width: 1px;
+	border-style: dotted;
+	border-radius: 5px;	
+}
+
+.bio-p{
+	background: transparent;
 }
