@@ -1,22 +1,6 @@
-<!-- Simple Portfolio Site -->
+{% extends "base.html" %} 
 
-<!-DOCTYPE HTML>
-<html>
-
-<head>
-	<link rel="stylesheet" href="css/style.css">
-	<title>Tom Johnson</title>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-
-<nav id="navbar">
-	<a class="nav-link" href="projects">Projects</a>
-	<a class="nav-link" href="#bio">Bio</a>
-	<a class="nav-link" href="projects\mcgill-corpus-playlist.html">Playlist Analysis</a>
-	<a class="nav-link" href="projects\billboard-album-duration.htm">Album Duration</a>
-</nav>
+{% block content %}
 
 <section id="welcome-section">
 	<h1 id="welcome-h1">Welcome</h1>
@@ -92,5 +76,4 @@ A different application of network methods, via qualitative analysis of modernis
 More about me over at this old <a href='https://tom-johnson.net/'>sporadic blog</a>.
 </p>
 </div>
-
-</html>
+{% endblock %}
