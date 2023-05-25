@@ -49,38 +49,38 @@
 }
 
 
-#navbar {
+.navbar {
     position: fixed;
     top: 0px;
     left: 0%;
     width: 100%;
 	height: 40px;
     
-	background-color: var(--site-background-light);
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-	
-	text-align: center;
-	
-	
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items:center;
+	overflow: hidden;
+
+	background-color: grey;
 	
 }
 
-.nav-link{
-	width: 10%;
-	font-family: sans-serif;
-	border-color: grey;
-	border-width: 1px;
-	border-style: dotted;
-	vertical-align: middle;
-	background-color: var(--tile-background);
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 	
 }
+
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+.navbar a.active {
+	background-color: #04AA6D;
+	color: white;
+  }
 
 .nav-link:hover{
 	border-color: var(--site-background-dark);
