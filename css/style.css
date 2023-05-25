@@ -82,12 +82,6 @@
 	color: white;
   }
 
-.nav-link:hover{
-	border-color: var(--site-background-dark);
-	border-width: 1px;
-	border-style: solid;
-}
-
 
 h1{
 	text-align: center;
