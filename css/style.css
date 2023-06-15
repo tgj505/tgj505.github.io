@@ -55,9 +55,7 @@
     left: 0%;
     width: 100%;
 	height: 40px;
-    
 	overflow: hidden;
-
 	background-color: grey;
 	
 }
@@ -68,18 +66,17 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-	
+  font-size: 17px;	
 }
 
 .navbar a:hover {
-	background-color: #ddd;
-	color: black;
+	background-color:var(--site-background-light);
+	color:var(--site-font);
   }
   
 .navbar a.active {
-	background-color: #04AA6D;
-	color: white;
+	background-color:aliceblue;
+	color: var(--site-background-dark);
   }
 
 
@@ -174,7 +171,7 @@ img:hover {
     margin-right: auto;
     	
 	padding: 10px;
-	background-color: var(--site-background-light);
+	background-color: var(--tile-background);
 	border-color: black;
 	border-width: 1px;
 	border-style: dotted;
