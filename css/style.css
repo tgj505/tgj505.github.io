@@ -45,6 +45,7 @@
 	text-align: center;
 	padding-top: 35px;
 	font-family: Teko;
+	font-size: x-large;
 	
 }
 
@@ -112,6 +113,7 @@ a{
 	background-color: var(--site-background-light);
 	padding: 15px;
 	color: black;
+	font-size: medium;
 }
 
 #projects{
@@ -145,12 +147,12 @@ a{
 	
 	padding: 10px;
 	margin: 10px;
-	transition: box-shadow .5s ease;
+	transition: border-style .5s ease;
 }
 
 .project-tile:hover{
-	
-	box-shadow: 0 0 2px 1px var(--site-background-dark);
+	border-style: dashed;
+	/*box-shadow: 0 0 2px 1px var(--site-background-dark);*/
 }
 
 figure{
@@ -200,3 +202,26 @@ img:hover {
 .bio-p{
 	background: transparent;
 }
+
+.tag-filter {
+	/* Regular styles for tag filters */
+	background-color: #ccc;
+	color: #000;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+.tag-filter.active {
+	/* Styles for active tag filter */
+	background-color: #333;
+	color: #fff;
+  }
+
+.filter-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px; /* Optional: Add margin to adjust the vertical positioning */
+}
+  

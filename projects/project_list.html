@@ -8,6 +8,7 @@
 	<title>Tom Johnson</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../javascript/cards.js"></script>
 </head>
 
 <body>
@@ -24,9 +25,19 @@
 	<b><em>Click</em></b> on <b>images</b> for more details on each.
 </p>
 
+
+<div class="filter-container">
+	<div id="filter-section" style="text-align: center;">
+		<button class="tag-filter">All</button>
+		<button class="tag-filter">data</button>
+		<button class="tag-filter">music-theory</button>
+	</div>
+</div>
+  
+
 <section id="projects">
 	
-	<element class="project-tile">
+	<element class="project-tile" data-tags="data">
 		<h2 class="tile-title">FireCan</h2>
 		<figure class='tile-img-link'>
 			<a href="https://github.com/tgj505/firecan">
@@ -37,7 +48,7 @@
 				<p>Visualizing the spread of Canadian wildfires by collecting and animating <a href="https://cwfis.cfs.nrcan.gc.ca/home" target="_blank">Canadian Wildland Fire Information System</a> maps. So much smoke!</p>
 	</element>
 	
-	<element class="project-tile">
+	<element class="project-tile" data-tags="data music-theory">
 		<h2 class="tile-title">Spotify Genre Networks</h2>
 		<figure class='tile-img-link'>
 			<a href="https://tomgjohnson.files.wordpress.com/2017/10/johnson_smt2017_handout.pdf">
@@ -48,7 +59,7 @@
 				<p>Additional work can be found <a href="https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=3967&context=gc_etds#page=172" target="_blank">here</a>.</p>
 	</element>
 	
-	<element class="project-tile">
+	<element class="project-tile" data-tags="data music-theory">
 		<h2 class="tile-title">Chance the Rapper, Spotify, and Musical Categorization in the 2010s</h2>
 		<figure class='title-img-link'>
 			<a href="https://www.muse.jhu.edu/article/763317">
@@ -64,7 +75,7 @@
 		</p>
 	</element>
 
-	<element class="project-tile">
+	<element class="project-tile" data-tags="data music-theory">
 		<h2 class="tile-title">McGill Billboard Corpus</h2>
 		<figure class='tile-img-link'>
 			<a href="./mcgill-corpus-playlist.html">
@@ -80,7 +91,7 @@
 				</p>
 	</element>
 
-	<element class="project-tile">
+	<element class="project-tile" data-tags="data music-theory">
 		<h2 class="tile-title">Album Durations</h2>
 		<figure class='tile-img-link'>
 			<a href="./bb_a_duration.html">
@@ -91,7 +102,7 @@
 				<p>Turns out albums got longer....for awhile!</p>
 	</element>
 	
-	<element class="project-tile">
+	<element class="project-tile" data-tags="music-theory">
 		<h2 class="tile-title">Tonality and Topic Theory in Modernist Music</h2>
 		<figure class='tile-img-link'>
 			<a href="https://mtosmt.org/issues/mto.17.23.4/mto.17.23.4.johnson.php">
@@ -104,7 +115,7 @@
 		</p>
 	</element>
 
-	<element class="project-tile">
+	<element class="project-tile" data-tags="data music-theory">
 		<h2 class="tile-title">Chord Progressions in Popular Music</h2>
 		<figure class='tile-img-link'>
 			<a href="https://github.com/tgj505/wikipedia-chord-progressions">
@@ -115,7 +126,7 @@
 		<p>My students were wondering about the relative historical presence of various chord progressions in popular music.</p>
 	</element>
 
-	<element class="project-tile">
+	<element class="project-tile" data-tags="data music-theory">
 		<h2 class="tile-title">Changing Attributes in Pop Music</h2>
 		<figure class='tile-img-link'>
 			<a href="https://tom-johnson.net/2018/08/12/billboard-trends/">
